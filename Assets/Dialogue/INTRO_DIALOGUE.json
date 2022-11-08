@@ -1,0 +1,26 @@
+{
+  "npcCharacters": [
+    {
+      "npcName": "Alice",
+      "Dialogue": "Welcome to the Backwards Circuit, Racer!                     Press 'S' to Accelerate.                                                     'W' is to reverse and 'A' and 'D' to turn"
+    },
+    {
+      "npcName": "Gary",
+      "Dialogue": "Good Luck Twerp!                                                                                 You're gonna have to be pretty fast to beat the Gary"
+    },
+    {
+      "npcName": "Alice",
+      "Dialogue": "Why are you talking in third person?"
+    },
+    {
+      "npcName": "Gary",
+      "Dialogue": "DO NOT QUESTION THE GARY!"
+    },
+    {
+      "npcName": "Alice",
+      "Dialogue":"Don't mind him, you'll put him in place in due time, but first we have to get you warmed up!                               Pass through all the checkpoints on the path , and it would be in your best interest not to fall off as well"
+    }
+
+
+  ]
+}
