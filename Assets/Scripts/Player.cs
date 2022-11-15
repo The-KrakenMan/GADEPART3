@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public int Lapcounter = 1;
     public Text LapOut;
     public GameObject WinScreen;
+    public GameObject AudioObject;
 
 
 
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         LapOut.text = Lapcounter.ToString();
+        
     }
 
     // Update is called once per frame
@@ -32,12 +34,29 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            rbCar.AddRelativeForce(Vector3.forward*Speed);
+            rbCar.AddRelativeForce(Vector3.forward*Speed);         
+        }
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            AudioObject.GetComponent<SFXManager>().PlaySound("Acceleration");
+        }
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            AudioObject.GetComponent<SFXManager>().StopSound("Acceleration");
         }
 
         if (Input.GetKey(KeyCode.S))
         {
             rbCar.AddRelativeForce(Vector3.back*(Speed/2));
+   
+        }
+        if(Input.GetKeyDown(KeyCode.S))
+        {
+            AudioObject.GetComponent<SFXManager>().PlaySound("Brake");
+        }
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            AudioObject.GetComponent<SFXManager>().StopSound("Brake");
         }
 
 
@@ -72,6 +91,7 @@ public class Player : MonoBehaviour
     public void Win()
     {
         WinScreen.SetActive(true);
+        AudioObject.GetComponent<SFXManager>().PlaySound("pWin");
     }
 
 }

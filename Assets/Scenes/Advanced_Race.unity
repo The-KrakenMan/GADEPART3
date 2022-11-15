@@ -453,6 +453,10 @@ PrefabInstance:
       propertyPath: WinScreen
       value: 
       objectReference: {fileID: 893220104}
+    - target: {fileID: 1623154661161857921, guid: 58ba4325a045e014f81081aa1bba741b, type: 3}
+      propertyPath: AudioObject
+      value: 
+      objectReference: {fileID: 1786956949}
     - target: {fileID: 1623154661161857924, guid: 58ba4325a045e014f81081aa1bba741b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -581,7 +585,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 19b0ee274ebafd5458eecadf3e697f36, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -677,7 +681,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e750ccf5dce8b434084709f393d2161d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -773,7 +777,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 03062396fedb2d043ae655d134b4c497, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -869,7 +873,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5301dc250f0185545b3bda5b760201d7, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -965,7 +969,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 781d29f0b35a8244b86c2f36f96e618d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

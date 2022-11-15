@@ -13,25 +13,21 @@ public class SFXManager : MonoBehaviour
     public AudioSource pGameover;
     public AudioSource pAcceleration;
     public AudioSource pBrake;
+    Dictionary<string, AudioSource> audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
-        hasht1 = new Hashtable();
-        hasht1.Add(1, "crash");
-        hasht1.Add(2, "Win");
-        hasht1.Add(3, "gameOver");
-        hasht1.Add(4, "Acceleration");
-        hasht1.Add(5, "Brake");
-
-        Dictionary<int, AudioSource> audioSource = new Dictionary<int, AudioSource>();
-        audioSource.Add(1, pCrash);
-        audioSource.Add(2, pWin);
-        audioSource.Add(3, pGameover);
-        audioSource.Add(4, pAcceleration);
-        audioSource.Add(5, pBrake);
+   
+        audioSource = new Dictionary<string, AudioSource>();
+        audioSource.Add("Crash", pCrash);
+        audioSource.Add("Win", pWin);
+        audioSource.Add("GameOver", pGameover);
+        audioSource.Add("Acceleration", pAcceleration);
+        audioSource.Add("Brake", pBrake);
 
         hasht2 = new Hashtable(audioSource);
+        
     }
 
     // Update is called once per frame
@@ -42,6 +38,19 @@ public class SFXManager : MonoBehaviour
 
     public void PlaySound(string soundName)
     {
+        AudioSource PLAYING;
+        PLAYING = (AudioSource)hasht2[soundName];
+        PLAYING.Play(); 
+    }
+
+    public void StopSound(string soundName)
+    {
+        AudioSource PLAYING;
+        PLAYING = (AudioSource)hasht2[soundName];
+        PLAYING.Stop();
+
 
     }
+
+
 }
