@@ -8,6 +8,7 @@ public class AI_Controller : MonoBehaviour
     public NavMeshAgent Racer;
     public int LapCounter = 0;
     public int currentWaypoint = 0;
+    public Vector3 Target;
 
    
     // Start is called before the first frame update
@@ -25,11 +26,13 @@ public class AI_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void PlotACourse(Vector3 Target)
-    {
         Racer.SetDestination(Target);
     }
+
+    /*public void PlotACourse(Vector3 Target)
+    {
+        Racer.SetDestination(Target);
+    }*/
+
+
 }
