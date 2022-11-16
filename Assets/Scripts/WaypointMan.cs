@@ -72,4 +72,14 @@ public class WaypointMan : MonoBehaviour
         }
         return new Vector3();
     }
+
+    public void Reset()
+    {
+        GameObject Target;
+        for (int i = 0; i < 9; i++)
+        {
+            Target = Waypoints[i];
+            Target.GetComponent<Waypoint_Trigger>().Passed = false;
+        }
+    }
 }

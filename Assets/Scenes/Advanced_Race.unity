@@ -251,6 +251,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target_Waypoint: 7
   shortcut: 0
+  Passed: 0
+  WaypointCounter: 0
 --- !u!135 &122532886
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -374,6 +376,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target_Waypoint: 3
   shortcut: 0
+  Passed: 0
+  WaypointCounter: 0
 --- !u!135 &341611286
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -625,6 +629,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target_Waypoint: 1
   shortcut: 0
+  Passed: 0
+  WaypointCounter: 0
 --- !u!1 &573907302 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1652013808798417832, guid: c6c4fdb48a69acc42a432124ab06fa9f, type: 3}
@@ -1002,6 +1008,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target_Waypoint: 2
   shortcut: 0
+  Passed: 0
+  WaypointCounter: 0
 --- !u!135 &600123559
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1184,6 +1192,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target_Waypoint: 5
   shortcut: 0
+  Passed: 0
+  WaypointCounter: 0
 --- !u!135 &1052710753
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1386,6 +1396,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target_Waypoint: 4
   shortcut: 0
+  Passed: 0
+  WaypointCounter: 0
 --- !u!135 &1413020042
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1498,6 +1510,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target_Waypoint: 6
   shortcut: 0
+  Passed: 0
+  WaypointCounter: 0
 --- !u!135 &1438821585
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1610,6 +1624,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target_Waypoint: 2
   shortcut: 1
+  Passed: 0
+  WaypointCounter: 0
 --- !u!135 &1440662516
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1833,6 +1849,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target_Waypoint: 6
   shortcut: 1
+  Passed: 0
+  WaypointCounter: 0
 --- !u!135 &1496242319
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2027,7 +2045,7 @@ PrefabInstance:
       objectReference: {fileID: 331176161}
     - target: {fileID: 1623154661161857921, guid: 58ba4325a045e014f81081aa1bba741b, type: 3}
       propertyPath: TurnSpeed
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1623154661161857921, guid: 58ba4325a045e014f81081aa1bba741b, type: 3}
       propertyPath: WinScreen
@@ -2184,7 +2202,7 @@ PlayableDirector:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1732735144}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: de455867c0aa2ce4d96fb2f389ef96ee, type: 2}
   m_InitialState: 1
@@ -2730,3 +2748,47 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &2060973654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2060973656}
+  - component: {fileID: 2060973655}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2060973655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060973654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36457cb0ca4b06a43b95272b82a2ee7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2060973656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060973654}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -197.29056, y: 8.432022, z: -65.52796}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

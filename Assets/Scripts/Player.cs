@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public GameObject WinScreen;
     public GameObject LoseScreen;
     public GameObject AudioObject;
+    public GameObject WaypointMan;
 
 
 
@@ -29,6 +30,7 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         Movement();
+        
     }
 
     void Movement()
@@ -77,15 +79,21 @@ public class Player : MonoBehaviour
 
     public void Lap()
     {
-        if (Lapcounter < 4)
+        if (WaypointCount == 7)
         {
-            Lapcounter++;
-            LapOut.text = Lapcounter.ToString();
+            GameObject.FindObjectOfType<WaypointMan>().Reset();
+            if (Lapcounter < 4)
+            {
+                Lapcounter++;
+                LapOut.text = Lapcounter.ToString();
+            }
+            else
+            {
+                Win();
+            }
+            
         }
-        else
-        {
-            Win();
-        }
+       
         
     }
 

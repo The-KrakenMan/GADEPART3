@@ -6,6 +6,9 @@ public class Waypoint_Lap : StateMachineBehaviour
 {
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-       
+        if (animator.GetInteger("Target_Waypoint")== 7)
+        {
+            animator.SetInteger("Target_Waypoint",0);
+        }
     }
 }
