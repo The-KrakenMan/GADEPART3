@@ -6,7 +6,6 @@ public class SFXManager : MonoBehaviour
 {
     public static SFXManager instance;
 
-    public Hashtable hasht1;
     public Hashtable hasht2;
     public AudioSource pCrash;
     public AudioSource pWin;

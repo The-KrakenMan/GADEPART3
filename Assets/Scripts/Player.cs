@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public int Lapcounter = 1;
     public Text LapOut;
     public GameObject WinScreen;
+    public GameObject LoseScreen;
     public GameObject AudioObject;
 
 
@@ -91,7 +92,13 @@ public class Player : MonoBehaviour
     public void Win()
     {
         WinScreen.SetActive(true);
-        AudioObject.GetComponent<SFXManager>().PlaySound("pWin");
+        AudioObject.GetComponent<SFXManager>().PlaySound("Win");
+    }
+
+    public void Lose()
+    {
+        LoseScreen.SetActive(true);
+        AudioObject.GetComponent<SFXManager>().PlaySound("GameOver");
     }
 
 }
