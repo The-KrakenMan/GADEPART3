@@ -20,13 +20,10 @@ public class Waypoint_Trigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag != "Player")
+        if (other.tag == "Enemy")
         {
             other.gameObject.GetComponent<Animator>().SetInteger("Target_Waypoint", Target_Waypoint);
         }
-        else
-        {
-
-        }
+        
     }
 }

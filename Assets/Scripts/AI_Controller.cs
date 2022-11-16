@@ -8,7 +8,7 @@ public class AI_Controller : MonoBehaviour
     public NavMeshAgent Racer;
     public int LapCounter = 0;
     public int currentWaypoint = 0;
-
+    
    
     // Start is called before the first frame update
     void Start()
