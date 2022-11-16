@@ -20,11 +20,13 @@ public class Waypoint_Trigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Enemy")
+        if (other.tag != "Player")
         {
-            Debug.Log("Checkpoint Triggered");
             other.gameObject.GetComponent<Animator>().SetInteger("Target_Waypoint", Target_Waypoint);
         }
+        else
+        {
 
+        }
     }
 }
